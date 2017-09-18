@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario Projeto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="menu">
+        <div class="tx">Mapa Formulario</div>
+       
+        <form method="get" action="/Formulario_Projeto/index.html" >
+            <fieldset >
+                <div class="texto"> 
+                    <label for="Origem">Origem</label>
+                    <input autocomplete="on" id="Origem" class="origem" type="text" name="Origem">             
+                    <label for="Destino">Destino</label>
+                    <input autocomplete="on" id="Destino" class="destino" type="text" name="Destino">
+                    <input class="busc" value="Buscar" id="btnEnviar" name="buscar" type="submit" >
+                </div>
+              
+            </fieldset>
+         </form>
+            <div id="Mapa" class="mapaa" ></div>
+           
+            <div id="Trajetorias" class="trajetoria">
+                
+            </div>
+        
+      
+     
+        <script src="Codigojava.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js"></script>
+        <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpuz-NnZ89Km1tNSV5BfbIYa1cBRC5RI4&callback=initMap">
+       </script>
+
+            
+    </body>
+</html>
